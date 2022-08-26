@@ -10,7 +10,7 @@
 
 int main(int argc, const char * argv[]) {
     int vitez = 0, pocet = 0;
-    int poz[9], index, symbol, hrac, flag, i, k, j;
+    int poz[9], index, symbol, hrac, flag, i, j, k;
     
     for(i=0; i<9; i++){
         poz[i] = ' ';
@@ -24,7 +24,7 @@ int main(int argc, const char * argv[]) {
         printf("-+-+-\n");
         printf("%c|%c|%c\n", poz[3], poz[4], poz[5]);
         printf("-+-+-\n");
-        printf("%c|%c|%c\n", poz[7], poz[8], poz[9]);
+        printf("%c|%c|%c\n", poz[6], poz[7], poz[8]);
         
         if(pocet % 2 == 0){
             symbol = 'X';
@@ -34,7 +34,7 @@ int main(int argc, const char * argv[]) {
             hrac = 2;
         }
         
-        printf("Pohněte hráčem%d(1-9): ", hrac);
+        printf("Zaberte políčko(1-9): ", hrac);
         scanf("%d", &index);
         if(index<1 || index>9){
             printf("Povolené čísla jsou od 1 -9");
@@ -62,3 +62,4 @@ int main(int argc, const char * argv[]) {
 
     return 0;
 }
+
